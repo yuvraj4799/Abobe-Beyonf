@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        #aut {
+            border-radius: 500%;
+        }
+
+        footer:hover {
+            font-size: 18px;
+            color: chocolate;
+        }
+
+        h1:hover {
+            font-size: 45px;
+            color: chocolate;
+        }
+
+        body {
+            background-image: url(/white.avif);
+            background-size: cover;
+        }
+
+        img:hover {
+            transition: 0.03s ease-in-out;
+            transform: scale(1.1);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 0, 0, 0.5);
+            transform: rotate(10deg);
+            filter: drop-shadow(0 0 2px black) drop-shadow(0 0 2px black) drop-shadow(0 0 2px #0c764c) drop-shadow(0 0 5px #fff);
+        }
+    </style>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-grey">
+            <a class="navbar-brand" href="#">IoT Applications Website</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#aut">About Author</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#IoTApp">Bedroom</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skilSet">Hall</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skilSet">Kitchen</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Submit</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <h1>CONTROL PANEL !</h1>
+
+        <div class="container mt-5">
+            <div class="row row-cols-1 row-cols-md-3">
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="/Hall.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <h5 class="card-title">Bedroom</h5>
+                            <div id="box">
+                                <label for="BL">
+                                    <p><b>Color of Bedroom Light</b></p>
+                                </label>
+                                <input type="color" value="#8888ff" id="BL" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="/bed.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Hall</h5>
+                            <div id="box">
+                                <label for="HL">
+                                    <p><b>Color of Hall Light</b></p>
+                                </label>
+                                <input type="color" value="#8888ff" id="HL" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img src="/kitchen2.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Kitchen</h5>
+                            <div id="box">
+                                <label for="KL">
+                                    <p><b>Color of Kitchen Light</b></p>
+                                </label>
+                                <input type="color" value="#8888ff" id="KL" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container mt-5" id="aut">
+            <div class="media">
+                <img src="/myPhoto.jpg" width="120" class="mr-3" alt="My Photo">
+                <div class="media-body">
+                    <h5 class="mt-0"><i>About Author :</i></h5>
+
+                    <p><i><b>"Yuvraj Bansal here; nice to meet you all. I'm 19 Year's old. I'm a Chandigarh native. Both
+                                my 10th and 12th
+                                grades were earned in Chandigarh, at St. Stephen's School and GMSSS 37B, respectively.
+                                I'm presently
+                                pursuing a BTech degree at Chitkara University with a focus in software engineering. I
+                                enjoy playing
+                                cricket, listening to music, and learning new things in the technology world. My goal is
+                                to serve as a
+                                source of inspiration for others."</b></i></p>
+                    <br>
+                    <br>
+                    <hr>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <hr>
+        <br>
+    </footer>
+
+    <script>
+        // const colorPickers = document.querySelectorAll('input[type="color"]');
+        // const cards = document.querySelectorAll('.card');
+        // colorPickers.forEach((colorPicker, index) => {
+        //     colorPicker.addEventListener('input', () => {
+        //         const selectedColor = colorPicker.value;
+        //         cards[index].style.backgroundColor = selectedColor;
+        //     });
+        // });
+
+        // const colorPickers = document.querySelectorAll('input[type="color"]');
+        // colorPickers.forEach((colorPicker) => {
+        //     colorPicker.addEventListener('input', () => {
+        //         const selectedColor = colorPicker.value;
+        //         const card = colorPicker.closest('.card');
+        //         const titleElement = card.querySelector('.card-title');
+        //         const labelElement = card.querySelector('label');
+        //         titleElement.style.color = selectedColor;
+        //         labelElement.style.color = selectedColor;
+        //     });
+        // });
+
+        // const colorPickers = document.querySelectorAll('input[type="color"]');
+        // const images = document.querySelectorAll('img');
+        // colorPickers.forEach((colorPicker) => {
+        //     colorPicker.addEventListener('input', () => {
+        //         const selectedColor = colorPicker.value;
+        //         images.forEach((image) => {
+        //             image.style.boxShadow = `0 0 40px rgba(255, 255, 255, 0.5), 0 0 40px rgba(0, 0, 0, 0.5), 0 0 15px ${selectedColor}`;
+        //         });
+        //     });
+        // });
+
+        const colorPickers = document.querySelectorAll('input[type="color"]');
+        colorPickers.forEach((colorPicker) => {
+            colorPicker.addEventListener('input', () => {
+                const selectedColor = colorPicker.value;
+                const card = colorPicker.closest('.card');
+                const titleElement = card.querySelector('.card-title');
+                const labelElement = card.querySelector('label');
+                const imageElement = card.querySelector('img');
+                titleElement.style.color = selectedColor;
+                labelElement.style.color = selectedColor;
+                imageElement.style.filter = `drop-shadow(0 0 25px ${selectedColor}) drop-shadow(0 0 30px #fff)`;
+            });
+        });
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
